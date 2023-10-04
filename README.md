@@ -8,7 +8,8 @@ This portfolio website project includes the following features:
 
 ## Acknowledgements
 Here are some beautiful websites that inspired the design of this website:
-- https://www.seanhalpin.xyz/
-- https://www.thecraftsmen.tech/
-- https://itssharl.ee/
-- https://dunks1980.com/
+- https://www.seanhalpin.xyz/  
+- https://www.thecraftsmen.tech/  
+- https://itssharl.ee/  
+- https://dunks1980.com/  
+- https://www.codemoore.com/  
