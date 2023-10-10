@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import fetchRepoByName from './fetchRepoByName'
 
-function RepoItem() {
+function RepoItem({ repoName }) {
 
   const [repo, setRepo] = useState({})
 
   useEffect(() => {
-    fetchRepoByName("stock-price-scraper")
+    fetchRepoByName(repoName)
       .then(setRepo)
   }, [])
 
