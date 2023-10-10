@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import fetchRepoByName from './fetchRepoByName'
+import './RepoItem.css'
 
 function RepoItem({ repoName }) {
 
@@ -11,15 +12,17 @@ function RepoItem({ repoName }) {
   }, [])
 
   return (
-    <>
-      <p>{repo.name}</p>
-      <p>{repo.description}</p>
-      <p>{repo.html_url}</p>
-      <p>{repo.language}</p>
-      <p>{repo.languages_url}</p>
-      <p>{repo.languages}</p>
-      <p>{repo.updated_at?.substring(0, 10)}</p>
-    </>
+    <div className="repo-item">
+      <a className="repo-link" href={repo.html_url}>
+        <p>{repo.name}</p>
+        <p>{repo.description}</p>
+        {/* <p>{repo.html_url}</p> */}
+        <p>{repo.language}</p>
+        {/* <p>{repo.languages_url}</p>
+        <p>{repo.languages}</p> */}
+        <p>{repo.updated_at?.substring(0, 10)}</p>
+      </a>
+    </div>
   )
 }
 

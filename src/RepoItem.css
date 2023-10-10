@@ -1,0 +1,11 @@
+.repo-item {
+  display: flex;
+  flex-direction: column;
+  border: solid 3px #000;
+  border-radius: 9px;
+}
+
+.repo-link {
+  text-decoration: none;
+  color: inherit;
+}
