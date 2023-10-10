@@ -13,7 +13,7 @@ function RepoItem({ repoName }) {
 
   return (
     <div className="repo-item">
-      <a className="repo-link" href={repo.html_url}>
+      <a className="repo-link" href={repo.html_url} target='_blank'>
         <p>{repo.name}</p>
         <p>{repo.description}</p>
         {/* <p>{repo.html_url}</p> */}
