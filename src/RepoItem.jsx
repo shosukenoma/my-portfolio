@@ -17,7 +17,8 @@ function RepoItem({ repoName }) {
       <p>{repo.html_url}</p>
       <p>{repo.language}</p>
       <p>{repo.languages_url}</p>
-      <p>{repo.updated_at}</p>
+      <p>{repo.languages}</p>
+      <p>{repo.updated_at?.substring(0, 10)}</p>
     </>
   )
 }
