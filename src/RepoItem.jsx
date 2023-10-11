@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import fetchRepoByName from './fetchRepoByName'
+import convertRepoName from './convertRepoName'
 import './RepoItem.css'
 
-function RepoItem({ repoName }) {
+function RepoItem({ repoName }) { // Expanded instead of using props.repoName
 
   const [repo, setRepo] = useState({})
 
@@ -14,7 +15,7 @@ function RepoItem({ repoName }) {
   return (
     <div className="repo-item">
       <a className="repo-link" href={repo.html_url} target='_blank'>
-        <p>{repo.name}</p>
+        <h2>{repo.name}</h2>
         <p>{repo.description}</p>
         {/* <p>{repo.html_url}</p> */}
         <p>{repo.language}</p>
