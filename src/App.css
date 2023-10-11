@@ -1,4 +1,7 @@
 .repo-list-container {
+  /* margin: 0 auto; */
+  margin-top: 24px;
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
