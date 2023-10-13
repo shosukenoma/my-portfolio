@@ -1,21 +1,23 @@
-function convertRepoName(repo_name) {
+function convertRepoName(repoName) {
   let first_letter = true;
-  let result = ""
-  for (let i = 0; i < repo_name?.length; i++) {
-    if (repo_name.substring(i) != "-") {
+  let charList = []
+  for (let i = 0; i < repoName.length; i++) {
+    if (repoName.charAt(i) != "-") {
       if (first_letter) {
-        result.concat(repo_name.substring(i).toUpperCase());
+        charList = [...charList, repoName.charAt(i).toUpperCase()]
       }
       else {
-        result.concat(repo_name.substring(i))
+        charList = [...charList, repoName.charAt(i)]
       }
       first_letter = false;
     } else { // if substring is “-”
-      result.concat(" ")
+      charList = [...charList, " "]
       first_letter = true;
     }
   }
-  return result
+  const result = charList.join('')
+  console.log("Repo name is ", result)
+  return charList
 }
 export default convertRepoName
 // https://www.w3schools.com/jsref/jsref_replace.asp

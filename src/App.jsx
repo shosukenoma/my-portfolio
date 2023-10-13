@@ -6,7 +6,7 @@ function App() {
     <>
       <div className="repo-list-container">
         <RepoItem repoName="stock-price-scraper" />
-        <RepoItem repoName="slack-note-v2" />
+        <RepoItem repoName="slack-note-v2" customHeading="Slack Note" />
         <RepoItem repoName="my-portfolio" />
       </div>
     </>

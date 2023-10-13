@@ -3,7 +3,7 @@ import fetchRepoByName from './fetchRepoByName'
 import convertRepoName from './convertRepoName'
 import './RepoItem.css'
 
-function RepoItem({ repoName, imgSrc="./assets/img/github-wallpaper.jpeg" }) { // Expanded instead of using props.repoName
+function RepoItem({ repoName, customHeading, imgSrc="./assets/img/github-wallpaper.jpeg" }) { // Expanded instead of using props.repoName
 
   const [repo, setRepo] = useState({})
 
@@ -16,10 +16,10 @@ function RepoItem({ repoName, imgSrc="./assets/img/github-wallpaper.jpeg" }) { /
     <div className="repo-item">
       <a className="repo-link" href={repo.html_url} target='_blank'>
         <div className="repo-img-box">
-          <img class="repo-img" src={imgSrc} alt="Background image for my repo" />
+          <img className="repo-img" src={imgSrc} alt="Background image for my repo" />
         </div>
         <div className="repo-text-box">
-          <h2>{repo.name}</h2>
+          <h2>{customHeading ? customHeading : convertRepoName(repoName)}</h2>
           <p>{repo.description}</p>
           {/* <p>{repo.html_url}</p> */}
           <p>{repo.language}</p>
