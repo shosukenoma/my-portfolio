@@ -25,7 +25,7 @@ function RepoItem({ repoName, customHeading, imgSrc="./assets/img/github-wallpap
           <p>{repo.language}</p>
           {/* <p>{repo.languages_url}</p>
           <p>{repo.languages}</p> */}
-          <p>{repo.updated_at?.substring(0, 10)}</p>
+          <p>Last updated: {repo.updated_at?.substring(0, 10)}</p>
         </div>
       </a>
     </div>
