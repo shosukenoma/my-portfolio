@@ -1,3 +1,16 @@
+.main-container {
+  background-color: blue;
+  height: 100vh;
+  max-width: 100vw;
+  padding: 30px;
+}
+
+.inner-container {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
 .repo-list-container {
   /* margin: 0 auto; */
   margin-top: 24px;

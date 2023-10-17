@@ -3,13 +3,11 @@ import RepoItem from './RepoItem'
 
 function App() {
   return (
-    <>
-      <div className="repo-list-container">
-        <RepoItem repoName="stock-price-scraper" />
-        <RepoItem repoName="slack-note-v2" customHeading="Slack Note" />
-        <RepoItem repoName="my-portfolio" />
+    <div className="main-container">
+      <div className="inner-container">
+
       </div>
-    </>
+    </div>
   )
 }
 
