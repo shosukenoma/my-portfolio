@@ -36,6 +36,9 @@ function App() {
                 <li>
                   <RepoCard repoName="my-portfolio"/>
                 </li>
+                <li>
+                  <RepoCard repoName="chore-roulette" />
+                </li>
               </ul>
             </div>
           </div>
