@@ -28,16 +28,16 @@ function App() {
             <div className="project-list">
               <ul>
                 <li>
-                  <RepoCard repoName="stock-price-scraper" />
+                  <RepoCard repoName="stock-price-scraper" displayColor="orange" />
                 </li>
                 <li>
-                  <RepoCard repoName="slack-note-v2" customHeading="Slack Note" />
+                  <RepoCard repoName="slack-note-v2" customHeading="Slack Note" displayColor="pink" />
                 </li>
                 <li>
-                  <RepoCard repoName="my-portfolio"/>
+                  <RepoCard repoName="my-portfolio" displayColor="light-green" />
                 </li>
                 <li>
-                  <RepoCard repoName="chore-roulette" />
+                  <RepoCard repoName="chore-roulette" displayColor="dark-blue" />
                 </li>
               </ul>
             </div>
