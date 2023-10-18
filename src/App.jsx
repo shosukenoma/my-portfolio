@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="main-container">
       <div className="inner-container debug-border">
-        <Header></Header>
+        <Header />
         <main className="main-projects debug-border">
           <div className="projects-display debug-border">
             <h2>Hi there! Welcome to my portfolio.</h2>
