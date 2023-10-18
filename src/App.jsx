@@ -21,7 +21,8 @@ function App() {
           <div className="projects-display debug-border">
             <h2>Hi there! Welcome to my portfolio.</h2>
             <span>
-              <p>My name is Sho Noma, I'm a new grad software developer. I have developed many types of front-ends from well know DJ applications to Ecommerce booking platforms.</p>
+              <p>I'm Sho Noma, a software developer.
+                <br/>My past projects revolve around Python, Go and React.</p>
               <p>I'm passionate about solving complex problems, and building user-friendly web services.</p>
             </span>
           </div>
