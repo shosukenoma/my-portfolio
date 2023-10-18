@@ -1,0 +1,21 @@
+.repo-card {
+  /* border: solid 3px #000; 
+  /* box-shadow: black; */
+  /* border-radius: 12px; */
+  /* width: 25%;  */
+  padding: 2.0rem;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.repo-card p {
+  font-size: 1.2rem;
+}
+
+.flex-3 {
+  display: flex;
+  gap: 2.0rem;
+}

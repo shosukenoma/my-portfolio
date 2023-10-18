@@ -14,7 +14,7 @@ function RepoItem({ repoName, customHeading, imgSrc="./assets/img/github-wallpap
 
   return (
     <div className="repo-item">
-      <a className="repo-link" href={repo.html_url} target='_blank'>
+      {/* <a className="repo-link" href={repo.html_url} target='_blank'> */}
         <div className="repo-img-box">
           <img className="repo-img" src={imgSrc} alt="Background image for my repo" />
         </div>
@@ -27,7 +27,7 @@ function RepoItem({ repoName, customHeading, imgSrc="./assets/img/github-wallpap
           <p>{repo.languages}</p> */}
           <p>Last updated: {repo.updated_at?.substring(0, 10)}</p>
         </div>
-      </a>
+      {/* </a> */}
     </div>
   )
 }
