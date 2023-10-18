@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-size: 3.0rem;
+}
+
 .links {
   text-decoration: none;
   list-style: none;

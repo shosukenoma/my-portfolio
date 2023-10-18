@@ -9,11 +9,13 @@ function App() {
         <Header />
         <main className="main-projects debug-border">
           <div className="projects-display debug-border">
-            <h2>Hi there! Welcome to my portfolio.</h2>
+            <span className="pre-heading">Hi there! I am...</span>
+            <h2>Sho Noma &#8212; Frontend Software Developer</h2>
             <span>
-              <p>I'm Sho Noma, a software developer.
+              <p>I'm a software developer specializing in building accessible websites.
                 <br/>My past projects revolve around Python, Go and React.</p>
-              <p>I'm passionate about solving complex problems, and building user-friendly web services.</p>
+              <p>I'm passionate about solving complex problems, and building user-friendly web services.
+                <br/>Start out by checking out my projects on your right!</p>
             </span>
           </div>
           <div className="projects-sidebar debug-border">

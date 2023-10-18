@@ -50,8 +50,17 @@
   width: 60%;
 }
 
+.projects-display .pre-heading {
+  font-size: 1.6rem;
+}
+
+.projects-display h2 {
+  font-size: 3.0rem;
+  margin-top: 1.0rem;
+}
+
 .projects-display p {
-  margin: 1.4rem 0;
+  margin: 2.4rem 0;
 }
 
 .projects-sidebar {
