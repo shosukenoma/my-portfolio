@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.github-link {
+  text-decoration: none;
+}
+
+.devicon-github-original {
+  color: #d1d1d1;
+  font-size: 3.6rem;
+}

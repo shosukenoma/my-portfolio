@@ -1,22 +1,12 @@
 import './App.css'
 import RepoCard from './RepoCard'
+import Header from './Header'
 
 function App() {
   return (
     <div className="main-container">
       <div className="inner-container debug-border">
-        <header className="header debug-border">
-          {/* <h1 className="logo"> SN &#47; </h1> */}
-          <h1 className="logo"> &#60; SN &#47; &#62; </h1>
-          {/* <h1 className="logo"> &#60; ShoNoma &#47; &#62; </h1> */}
-          <ul className="links">
-            <li className="github">
-              <a className="github-link" href="https://github.com/shosukenoma" target="_blank">
-                <i class="devicon-github-original"></i>
-              </a>
-            </li>
-          </ul>
-        </header>
+        <Header></Header>
         <main className="main-projects debug-border">
           <div className="projects-display debug-border">
             <h2>Hi there! Welcome to my portfolio.</h2>

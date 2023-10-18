@@ -23,26 +23,6 @@
   background-color: #242424;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.links {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.github-link {
-  text-decoration: none;
-}
-
-.devicon-github-original {
-  color: #d1d1d1;
-  font-size: 3.6rem;
-}
-
 .main-projects {
   flex: 1 1 auto; /* Turn on flex-grow */
 
