@@ -1,16 +1,37 @@
 import './App.css'
 import RepoCard from './RepoCard'
 import Header from './Header'
-import Overview from './Overview'
+import { useState, useEffect } from 'react'
 
 function App() {
+
+  const [display, setDisplay] = useState(0)
+  
   return (
     <div className="main-container">
       <div className="inner-container debug-border">
         <Header />
+        <div className="flex-margin" />
         <main className="main-projects debug-border">
           <div className="projects-display debug-border">
-            <Overview />
+            {/* Overview */}
+            <div className={`overview ${display==0 ? "" : "hidden"}`}>
+              <span className="pre-heading">Hi there! I am...</span>
+              <h2>Sho Noma &#8212; Software Developer</h2>
+              <span>
+                <p>I'm a software developer specializing in building accessible websites.
+                  <br/>I have experience building applications in Python and React.js.</p>
+                <p>My interest lies in solving complex problems with logic
+                  <br/> and designing applications while thinking about user accessibility.</p>
+                <p>Check out my projects from the scrollable list on your right!</p>
+              </span>
+            </div>
+            {/* Repo 1 */}
+            <div className={`repo-red ${display==1 ? "" : "hidden"}`}></div>
+            {/* Repo 2 */}
+            <div className={`repo-green ${display==2 ? "" : "hidden"}`}></div>
+            {/* Repo 3 */}
+            <div className={`repo-blue ${display==3 ? "" : "hidden"}`}></div>
           </div>
           <div className="projects-sidebar debug-border">
             {/* <h2>Projects</h2> */}
@@ -32,9 +53,9 @@ function App() {
                 <li>
                   <RepoCard repoName="my-portfolio" displayColor="light-green" />
                 </li>
-                <li>
+                {/* <li>
                   <RepoCard repoName="chore-roulette" displayColor="dark-blue" />
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
