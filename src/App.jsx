@@ -1,7 +1,7 @@
 import './App.css'
 import RepoCard from './RepoCard'
 import Header from './Header'
-import { useState } from 'react'
+import { React, useState } from 'react'
 
 function App() {
 
