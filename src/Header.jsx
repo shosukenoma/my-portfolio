@@ -2,14 +2,14 @@ import React from 'react'
 import './Header.css'
 import GmailClipBoard from './GmailClipBoard';
 
-function Header() {
+function Header( {handleLogoClick} ) {
 
   new ClipboardJS('.gmail-btn');
 
   return (
     <header className="header debug-border">
       {/* <h1 className="logo"> SN &#47; </h1> */}
-      <a className="logo-link" href="/">
+      <a className="logo-link" rel="noopener" onClick={() => handleLogoClick()}>
         <h1 className="logo"> &#60; SN &#47; &#62; </h1>
       </a>
       {/* <h1 className="logo"> &#60; ShoNoma &#47; &#62; </h1> */}

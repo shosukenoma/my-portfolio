@@ -5,12 +5,16 @@ import { useState, useEffect } from 'react'
 
 function App() {
 
-  const [display, setDisplay] = useState(0)
+  const [display, setDisplay] = useState(3);
   
+  function handleLogoClick() {
+    setDisplay(0);
+  }
+
   return (
     <div className="main-container">
       <div className="inner-container debug-border">
-        <Header />
+        <Header handleLogoClick={handleLogoClick}/>
         <div className="flex-margin" />
         <main className="main-projects debug-border">
           <div className="projects-display debug-border">
@@ -45,13 +49,19 @@ function App() {
             <div className="project-list">
               <ul>
                 <li>
-                  <RepoCard repoName="stock-price-scraper" displayColor="orange" />
+                  <a rel="noopener" className="project-link" onClick={display==1 ? () => setDisplay(0) : () => setDisplay(1)}>
+                    <RepoCard repoName="stock-price-scraper" displayColor="orange" />
+                  </a>
                 </li>
                 <li>
-                  <RepoCard repoName="slack-note-v2" customHeading="Slack Note" displayColor="pink" />
+                  <a rel="noopener" className="project-link" onClick={() => setDisplay(2)}>
+                    <RepoCard repoName="slack-note-v2" customHeading="Slack Note" displayColor="pink" />
+                  </a>
                 </li>
                 <li>
-                  <RepoCard repoName="my-portfolio" displayColor="light-green" />
+                  <a rel="noopener" className="project-link" onClick={() => setDisplay(3)}>
+                    <RepoCard repoName="my-portfolio" displayColor="light-green" />
+                  </a>
                 </li>
                 {/* <li>
                   <RepoCard repoName="chore-roulette" displayColor="dark-blue" />
