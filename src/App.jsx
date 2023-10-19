@@ -1,7 +1,7 @@
 import './App.css'
 import RepoCard from './RepoCard'
 import Header from './Header'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 function App() {
 
@@ -60,7 +60,7 @@ function App() {
                 </li>
                 <li>
                   <a rel="noopener" className="project-link" onClick={() => setDisplay(3)}>
-                    <RepoCard repoName="my-portfolio" displayColor="light-green" />
+                    <RepoCard repoName="sho-noma-v1" customHeading="Portfolio Website" displayColor="light-green" />
                   </a>
                 </li>
                 {/* <li>
